@@ -18,5 +18,5 @@ All Ansible playbooks should generally adhere to the [sample directory layout](h
 
 ## Creating Your Own One-Click Cluster
 
-For more information on creating and submitting a Partner App for the Linode Marketplace please see [Contributing](CONTRIBUTING.md) and [Development](DEVELOPMENT.md).
+For more information on creating and submitting a Partner App for the Linode Marketplace please see [Contributing](docs/CONTRIBUTING.md) and [Development](docs/DEVELOPMENT.md).
 
