@@ -117,9 +117,7 @@ Tasks can then be delegated to the provisioner with the `delegate_to` arguement:
 delegate_to: "{{ groups['APP_provisioner'][0] }}"
 ```
 
-Additionally, a dynamic number of cluster members can be provisioned and populated into the Ansible `hosts` file with Jinja loops in the `provision.yml` play.
-
-
+Additionally, a dynamic number of cluster members can be provisioned and populated into the Ansible `hosts` file with Jinja loops in the `provision.yml` play. See [provision.yml](provision.yml) to see an example of how we utilize Jinja loops.
 Here are some examples of UDFs your deployment can use in the ss.sh StackScript: 
 
 ```
