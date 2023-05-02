@@ -20,7 +20,7 @@ Create a highly available Redis cluster using [Redis Sentinel](https://redis.io/
 ## Documentation
 
 Deployment guide:
-- [Deploying a Redis Sentinel cluster throught the Linode Marketplace]()
+- [Deploying a Redis Sentinel cluster throught the Linode Marketplace](https://www.linode.com/docs/products/tools/marketplace/guides/redis-cluster/)
 
 Additonal resources:
 
