@@ -31,12 +31,12 @@ In addition to submitting your [Ansible playbook](https://docs.ansible.com/ansib
 *All apps must have a designated support URL to direct users to a resource like a Contact form, specific Community forum, or active social media account they can contact for help.*
 
 **Operating System**  
-*One-Click Apps currently support Debian 11, and Ubuntu 22.04 LTS.*
+*One-Click Clusters currently support Ubuntu 22.04 LTS.*
 
 **Documentation**  
 Providing thorough technical documentation is a requirement of submitting a One-Click App to Linode’s Marketplace for both testing purposes and publishing the Doc to our Docs Library.
 
-[Documentation Example: Deploying WordPress with One-Click Apps.](https://www.linode.com/docs/platform/one-click/deploying-wordpress-with-one-click-apps/)
+[Documentation Example: Deploy a Redis Sentinel Cluster through the Linode Marketplace.](https://www.linode.com/docs/products/tools/marketplace/guides/redis-cluster/)
 
 Add your documentation as an additional file in your pull request or add a link to documentation on your company website.
 
