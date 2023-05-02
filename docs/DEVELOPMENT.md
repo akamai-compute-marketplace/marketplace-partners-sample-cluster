@@ -68,16 +68,16 @@ APP/
      handlers/ 
         main.yml
       tasks/ 
-        main.yml
-    
-```
+        main.yml 
+```  
+
 As general guidelines: 
   - The secret_vars file should be encrypted with Ansible Vault
   - The roles should general conform to the following standards:
     - Common, including preliminary configurations and Linux best practice.
     - APP, including all necessary plays for service deployment and configuration.
     - Post, including clean up and user credentials. 
-```
+
 
 For more information on roles please refer to the [Ansible documentation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#using-roles-at-the-play-level).
 
