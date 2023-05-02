@@ -1,7 +1,7 @@
 # Marketplace App Development Guidelines.
 
 The following design best practices should be adhered to: 
-  - Marketplace applications should use fully supported Linode Ubuntu 22.02 images when possible. 
+  - Marketplace applications should use fully supported Linode Ubuntu 22.04 LTS images when possible. 
   - The deployment of the service should be “hands-off,” requiring no command-line intervention from the user before reaching its initial state. The end user should provide all necessary details via User Defined Variables (UDF) defined in the StackScript, so that Ansible can fully automate the deployment.
   - There is not currently password strength validation for StackSctript UDFs, therefore, whenever possible credentials should be generated and provided to the end-user.
   - At no time should billable services that will not be used in the final deployment be present on the customer’s account.
