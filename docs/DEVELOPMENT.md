@@ -64,11 +64,18 @@ APP/
         main.yml
       tasks/ 
         main.yml
+        firewall.yml
+        ssl.yml
+        hostname.yml
+        $APP.yml
     post/ 
      handlers/ 
         main.yml
       tasks/ 
         main.yml 
+        creds.yml
+        sshkeys.yml
+        sudouser.yml
 ```  
 
 As general guidelines: 
