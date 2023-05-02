@@ -88,6 +88,36 @@ As general guidelines:
 
 For more information on roles please refer to the [Ansible documentation](https://docs.ansible.com/ansible/latest/user_guide/playbooks_reuse_roles.html#using-roles-at-the-play-level).
 
+# Cluster Development and Deployment for Marketplace Apps
+
+A Marketplace App cluster leverages the Linode API and Ansible to deploy and configure a multi-node service such as Redis with replica sets. In addition to the best practices discussed in [Development](docs/DEVELOPMENT.md) please adhere to the following guidelines for clustered apps. 
+
+## Cluster Specific Guidelines 
+
+A requirement of clustered deployments is that the “provisioner” (the initial Linode deployed by the Stackscript) configures itself as a member of the cluster. At no point should there be a Linode deployed to the customer’s account which will not be used in the final service. This is generally achieved by adding a specific delegation of $NODE1 to localhost.
+
+Marketplace App clusters must include the end-user’s Linode API token, which must include appropriate permissions to add and remove the necessary compute resources. 
+
+Clustered Marketplace app Stackscripts require a “cluster_size” UDF to estimate billing for the cluster correctly.
+
+```
+# <UDF name="cluster_size" label="Redis cluster size" default="3" oneof="3,5" />
+```
+
+### Cluster Development Tips and Tricks 
+
+As the primary consideration for clustered deployments is to incorporate the provisioner as a member of the cluster we recommend assigning the provisioner into a unique group and creating a delegation to localhost in the `hosts` file. 
+```
+[APP_provisioner]
+        localhost ansible_connection=local user=root
+```
+
+Tasks can then be delegated to the provisioner with the `delegate_to` arguement: 
+```
+delegate_to: "{{ groups['APP_provisioner'][0] }}"
+```
+
+Additionally, a dynamic number of cluster members can be provisioned and populated into the Ansible `hosts` file with Jinja loops in the `provision.yml` play. See [provision.yml](provision.yml) to see an example of how we utilize Jinja loops.
 Here are some examples of UDFs your deployment can use in the ss.sh StackScript: 
 
 ```
