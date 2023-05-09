@@ -25,7 +25,7 @@ All Bash files, including the deployment Stackscript for each Marketplace cluste
 
 All Ansible playbooks should generally adhere to the [sample directory layout](https://docs.ansible.com/ansible/latest/user_guide/sample_setup.html#sample-ansible-setup) and best practices/recommendations from the latest Ansible [User Guide](https://docs.ansible.com/ansible/latest/user_guide/index.html).
 
-- All Ansible playbooks for Marketplace Clusters should include common [`.ansible-lint`](../.ansible-lint), [`.yamllint`](../.yamllint), []`ansible.cfg`](../ansible.cfg) and [`.gitignore`](../.gitignore) files. 
+- All Ansible playbooks for Marketplace Clusters should include common [`.ansible-lint`](../.ansible-lint), [`.yamllint`](../.yamllint), [`ansible.cfg`](../ansible.cfg) and [`.gitignore`](../.gitignore) files. 
 - All Ansible playbooks should use Ansible Vault for initial secrets management. Generated credentials should be provided to the end-user in a standard `.deployment-secrets.txt` file located in the sudo user’s home directory. 
 - Whenever possible Jinja should be leveraged to populate a consistent variable naming convention during [node provisioning.](../provision.yml)
 - It is recommended to import service specific tasks as modular `.yml` files under the application’s `main.yml.` 
