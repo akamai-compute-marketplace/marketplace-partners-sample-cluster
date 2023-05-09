@@ -2,7 +2,7 @@
 
 Thanks for your interest in contributing to the Linode Marketplace!
 
-You can contribute by [opening an issue](https://github.comlinode-solutions/marketplace-partners-sample-app/issues) or submitting a pull request. Best practices for development of Linode Marketplace Clusters are discussed in the [Development Readme](DEVELOPMENT.md).
+You can contribute by [opening an issue](https://github.comlinode-solutions/marketplace-partners-sample-app/issues) or submitting a pull request. Best practices for development of Linode Marketplace Clusters are discussed in the [Development guide](DEVELOPMENT.md).
 
 ## Opening an issue
 
@@ -23,6 +23,7 @@ In addition to submitting your [Ansible playbook](https://docs.ansible.com/ansib
 **Cluster App Name**
 
 **Cluster App README**
+
 Please write a REAMD.md following the format of this [example.](EXAMPLE_README.md) 
 
 **Cluster App Description**  
