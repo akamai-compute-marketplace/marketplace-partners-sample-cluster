@@ -1,6 +1,6 @@
 # Linode Marketplace Redis Sentinel Cluster
 
-![redis-diagram](images/redis.png)
+![redis-diagram](../images/redis.png)
 
 Create a highly available Redis cluster using [Redis Sentinel](https://redis.io/docs/management/sentinel/) through the [Linode Ansible Collection](https://github.com/linode/ansible_linode) through the Linode Marketplace. Redis is an open-source, in-memory, data-structure store, with the optional ability to write and persist data to a disk, which can be used as a key-value database, cache, and message broker. Redis features built-in transactions, replication, and support for a variety of data structures such as strings, hashes, lists, sets, and others. 
 
