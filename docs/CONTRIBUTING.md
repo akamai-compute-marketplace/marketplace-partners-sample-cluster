@@ -22,9 +22,8 @@ In addition to submitting your [Ansible playbook](https://docs.ansible.com/ansib
 
 **Cluster App Name**
 
-**Cluster App README**
-
-Please write a REAMD.md following the format of this [example.](EXAMPLE_README.md) 
+**Cluster App README** \
+*Please write a REAMD.md following the format of this [example.](EXAMPLE_README.md)*
 
 **Cluster App Description**  
 *A short description (100-125 words) to go with your app listing in Marketplace on Linode.com. Note that this description is subject to edits before publication.*
